@@ -9,9 +9,6 @@ namespace TwilioSend
         static void Main(string[] args)
         {
             // Find your Account Sid and Token at twilio.com/console
-            const string accountSid = "AC5ac57f1381d7ea938e95bb515b00f87f";
-            const string authToken = "16e3efab1c3ba477fe07e8b3bde07ff8";
-
             TwilioClient.Init(accountSid, authToken);
 
             var message = MessageResource.Create(
